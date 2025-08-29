@@ -1,0 +1,53 @@
+Day05
+
+1. 제어문(Control Statement)
+        - 프로그램 실행 순서를 변경하거나
+            조건에 따라 실행하거나 하지 말거나
+            특정한 부분을 반복하기 위한 구문
+
+        =>제어문은 크게 3종류가 존재함
+            -조건문 : if, switch
+            -반복문 : while, for, do while
+            -기타 제어문 : break, continue
+
+    (1) if statement
+        1) 사용방법
+            int a = 0;
+            if(조건1){
+                //ex) a > b && c < d
+                조건식1이 true 일떄 할일 ;
+            }
+            else if(조건식2){
+                조건식1은 false, 조건식2는 true일 때 할 일;
+            }
+            ...
+            else if(조건식N){
+                조건식1 ~ N-1 까지 모두 false, 조건식N만 true 일 때 할 일;
+            }
+            else{
+                모든 조건식이 false 이면 할 일;
+            }
+
+            ->다양한 케이스가 있을 수 있음
+              if
+              if else
+              if else if
+              if else if ... else
+
+    (2) switch case statement
+         - 조건식의 결과가 아니라 값으로 비교
+         - switch ~ case
+         - if 문 보다 속도가 빠름
+
+         1) 사용밥법
+            switch(변수){
+                case 값:
+                    변수가 값1일때 수행할 문장;
+                    break;
+                case 값2:
+                    변수가 값2일때 수행할 문장;
+                    break;
+                ...
+                default:
+             모든 case에 해당하지 않을 때 수행할 문장;
+            }

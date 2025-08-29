@@ -1,0 +1,43 @@
+Day 11
+
+1. String Class
+        String str1 ="a";
+        String str2 ="a";
+        str1 == str2 ? => true
+
+    (1) final 클래스로 상속 불가
+            int, float, double과 같은 primitive 데이터형과
+            거의 유사한 정도의 입지, 취급
+
+    (2) new String(" ~~~ "), "~~~" 두 가지로 생성 가능
+
+    (3)다수의 메서드들이 존재
+        1)  length(): 문자열의 길이
+                    cf) char[] str => str.lenggth
+                        String str => str.length()
+
+        2) charAt(인덱스) : 인덱스 위치에 있는 글자
+            jumin_no = "001231-8000121";
+            gender = jumin_no.charAt(7);
+
+        3) equals(str) : str과 동일한 문자열 값인지 체크
+           equalsIgnoreCase(str) : 대소문재 구분없이 체크
+
+        4) replace(찾을 문자열, 대체 문자열)
+
+        5) substring(시작인덱스, 종료인덱스)
+            결과의 글자 수 = 종료 인덱스 - 시작인덱스
+            substring(123123,12783214)
+            주민번호의 생년월일까지 => jumin_no.substring(0, 6)
+            두 번쨰 인자를 생략하면 끝까지 라는 의미
+
+        6) trim() : 문자열 앞 뒤의 공백 제거
+
+        7) split(나눌문자) : 나눌문자를 기준으로 문자열의 배열
+
+        8) matches(정규표현식) : 문자열이 졍규표현식에 맞는지 체크
+                              (true, false)
+                              영문자 : A-Za-z
+                              숫자 : 0-9
+                              한글 : 가-힣
+                    실전 간단예시 :  (.*?)\.(exe|sh|zip|alz)$ 

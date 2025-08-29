@@ -1,0 +1,47 @@
+MyClass mc = new MyClass();
+
+System.out.println(me) => println(Object)
+    mc.toString()
+System.out.println(me.toString()) => println(String)
+
+Day10
+
+1. class disign 연습
+    => DepartEx.java
+
+2.상속(Inheritance)
+(1) 객체 지향 언어의 가장 큰 특징 > 재사용성 > 상속
+    상속은 부모 클래스로부터 변수와 메서드를 물려받는 것
+    클래스를 만들 때 처음부터 만드는 것이 아니라
+    일단 부모로부터 받고 추가적인 것이나 변경해야할 부분만 수정
+
+(2) 상속의 특징
+    1) 용어
+        부모, 슈퍼, 상위, 베이스 : 상속을 주는 클래스
+        자식, 서비, 하위, 파생(Derived) :   상속을 받는 클래스 
+    2) 상속 방법
+        extends 키워드 사용
+        class Child extends Parent{
+
+        }
+    3) 상속의 특징
+        - 단일 상속만 가능
+        - 부모 객첵 먼저 생성되고 자식 객체가 생성 
+        - 모든 클래스의 조상 : Object 
+
+    4) super 
+        - 자식 클래스에서 부모 클래스를 부르는 이름
+        - super.필드, super.메서드()
+
+(3) 메서드 재정의(Method Overriding==Overwriting)
+    부모 : print(String str)
+    자식 : print(String aaa)
+    => 같은 메서드이다.
+
+    1)부모 클래스의 메서드를 자식 클래스가 변경하는 것
+    2) 메서도명 뿐 아니라 메서드의 변수 타입이 동일해야 함
+       메서드명은 같은데 메서드의 변수 타입이 다르면
+       => 메서드 오버로딩(Overloading)
+    3) 동일한 이름, 타입의 메서드는 자식 메서드가 우선
+    4) 부모의 권한과 같거나 낮은 권한
+        부모가 public이면 자식은 무조건 public

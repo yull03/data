@@ -1,0 +1,74 @@
+Day8
+
+1. 클래스와 객체 지향(Object-Oriented)
+    (1) 정의
+        클래스(class) : 설계도
+        객체(object) : 설계도로 만든 제품
+
+        클래스는 객체로 구현될 때 의미가 생긴다.
+        cf) Apple 과 An Apple 
+
+        객체 지향 언어는 코드 개발 최소화가 목적
+        객체 지향 프로그래밍은 클래스를 디자인 하는 것
+
+        학생A, 학생 B, 학생C
+        학생 
+        사람
+        동물
+        만물(object)
+
+    (2) 객체 지향 언어의 특징
+        - 상속(Inheriteance)
+             하윜 클래스가 상위 클래스의 속성을 물려받는 것
+        - 다형성 (Polymorphism)
+            cf) C : func1(int) func2(float) func3(char)
+            같은 이름으로 호출이나
+            호출할 때 전달하는 인수의 타입에 따라 다르게 설계
+        -추상화(Abstraction)
+            사물(객체)의 속성이나 특성을 추출하는 것 
+        -캡슐화(Encapsulation)
+            내부를 공개하지 않는 것(예 - 리모콘)
+            불필요하게 복잡한 것을 피하고 위험에서 보호 
+
+    (3)클래스의 구조
+        - 필드(Field)
+            클래스가 가지고 있는 변수
+            클래스의 함수 내에서 생성한 변수는 아님
+            멤버 변수(member variable)
+
+        - 메서드 (Method)
+            함수인데, 클래스 소속의 함수
+            멤버 함수(member function)
+        
+        - 생성자(Constructor)
+            클래스가 객체(제품)으로 만들어질 때 반드시 실행되는 메서드
+            객체가 만들어질 때 반드시 해야될 일
+            ex) 필드 초기화, 데이터베이스 접속, 객체 수 증가
+
+            생성자는 어떻게 생성?
+            클래스 이름과 동일한 이름의 메서드(리턴값 없음)
+
+* 클래스 탄생 히스토리
+    변수 : 하나의 값 저장
+    배열 : 여러 개의 값을 저장(동일 타입)
+    구조체(struct) : 여러 종류의 값을 저장
+                   typedef{
+                    int age;
+                    char* name;
+                   } man;
+                   man man1, man man2;
+                   man1.age = 900;
+                   man1.name = "Abraham";
+    클래스(class) : 여러 종류의 값 뿐만 아니라
+                   여러 형태의 행동(메서드) 보유
+                   class Man{
+                    int age;
+                    String name;
+                    void introduce(){
+                        제 이름은 name이고 나이는 age냐?
+                    }
+                   }
+                   Man nam1 = new Man();
+                   man1.name = "신유빈";
+                   man1.age = 21;
+                   man1.introduce();
