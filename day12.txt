@@ -101,6 +101,16 @@ Day12
                  => 400개의 메서드를 Java 회사가 만듦
                  => 바꾸려면 바꿀 수 있음
 
+    (9) 인터페이스의 사용
+        클래스와의 사용 불분명(모호함)으로 호난
+        Spring의 MyBatis에서 java와 SQL(Mapper) 역할 분리
+        jav에서는 인터페이스를 만들고 메서드는 이름만 부여
+        SQL xml에서 이름에 메핑되는 SQL을 작성함
+        => java에서는 구현하지 않았기 때문에
+            interface의 기본ㄴ 사항에 완벽하게 맞음
+    
+    => MyInterface.java, MyClass.java
+
 
 
 
